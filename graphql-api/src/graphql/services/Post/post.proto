@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+// Doc: https://developers.google.com/protocol-buffers/docs/proto3
+
+package sample;
+
+message Post {
+  string _id = 1;
+  string title = 2;
+  string body = 3;
+}
+
+message Posts {
+  int32 page = 1;
+  int32 limit = 2;
+  int32 count = 3;
+  repeated Post nodes = 4;
+}
+
+message addPostRequest {
+  reserved 1; // _id
+  string title = 2;
+  string body = 3;
+}
+
+message listPostRequest {
+  string page = 1 [default = 1];
+  string limit = 2;
+  string _id = 3;
+}
+
+service PostService {
+  rpc addPost (addPostRequest) returns (Post) {}
+  rpc listPosts (listPostRequest) returns (Posts) {}
+}

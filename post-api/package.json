@@ -1,0 +1,30 @@
+{
+  "name": "post-api",
+  "version": "1.0.0",
+  "description": "Sample gRPC server",
+  "main": "index.js",
+  "author": "Sven Gaubert",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.3.0",
+    "@types/mongoose": "^5.2.18",
+    "grpc": "^1.15.1",
+    "mali": "^0.10.0",
+    "mongoose": "^5.3.1",
+    "nodemon": "^1.18.4",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/server.ts",
+    "client": "ts-node src/tools/cmd.ts",
+    "dev": "npx nodemon",
+    "test": "jest --forceExit"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.5",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.4"
+  }
+}
