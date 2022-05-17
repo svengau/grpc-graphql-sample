@@ -23,7 +23,7 @@
     "test": "jest --forceExit"
   },
   "devDependencies": {
-    "@types/jest": "^23.3.5",
+    "@types/jest": "23.3.14",
     "jest": "^23.6.0",
     "ts-jest": "^23.10.4"
   }
