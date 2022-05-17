@@ -18,7 +18,7 @@
     "grpc": "^1.19.0"
   },
   "devDependencies": {
-    "@types/graphql": "^14.2.0",
+    "@types/graphql": "14.2.3",
     "grpc_tools_node_protoc_ts": "^2.5.0",
     "ts-node": "^7.0.1",
     "typescript": "^3.4.1",
