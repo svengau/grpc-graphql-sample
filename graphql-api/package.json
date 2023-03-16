@@ -22,6 +22,6 @@
     "grpc_tools_node_protoc_ts": "^2.5.0",
     "ts-node": "^7.0.1",
     "typescript": "^3.4.1",
-    "typescript-eslint-parser": "^20.1.1"
+    "typescript-eslint-parser": "^21.0.0"
   }
 }
